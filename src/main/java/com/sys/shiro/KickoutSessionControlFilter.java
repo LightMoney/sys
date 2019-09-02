@@ -52,7 +52,7 @@ public class KickoutSessionControlFilter extends AccessControlFilter {
 		 * 判断是否已经踢出
 		 * 1.如果是Ajax 访问，那么给予json返回值提示。
 		 * 2.如果是普通请求，直接跳转到登录页
-		 *测试
+		 *
 		 */
 		Boolean marker = (Boolean)session.getAttribute(KICKOUT_STATUS);
 		if (null != marker && marker ) {
